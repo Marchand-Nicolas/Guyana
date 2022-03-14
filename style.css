@@ -1,0 +1,243 @@
+/* FONTS */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+/* PAGE */
+
+html {
+    scroll-behavior: smooth;
+}
+body {
+    overflow: overlay;
+    width:100%;
+    padding:0;
+    margin: 0
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(35, 184, 55, 0.5); 
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(86, 212, 103); 
+}
+
+
+/* MAIN CLASSES */
+
+.button {
+    cursor: pointer;
+}
+
+.title {
+    color: white;
+    font-size: 55px;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* NAV BAR */
+
+.navbar.contener {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 70px;
+    background: white;
+    box-shadow: 0px 7px 15px 5px rgba(0,0,0,0.2);
+    padding-right: 14px;
+    z-index: 4;
+    transition: 0.4s;
+}
+.navbar.contener:hover {
+    box-shadow: 0px 7px 15px 5px rgba(0,0,0,0.35);
+}
+.navbar.element {
+    color: rgb(21, 21, 24);
+    font-size: 35px;
+    margin-top: 13px;
+    font-family: 'Roboto', sans-serif;
+    transition: 0.3s;
+    cursor: pointer;
+    width: fit-content;
+    display: inline-block;
+    margin-left: 20px;
+    text-decoration: none;
+}
+.navbar.element:hover {
+    color: rgb(64, 187, 80); 
+}
+
+/* HEADER */
+
+.header_background {
+    width: 100%;
+    display:block;
+}
+
+.header_content {
+    pointer-events: none;
+    color: white;
+    transition: 0.4s;
+}
+.header_content:hover {
+    color: rgb(64, 187, 80); 
+    letter-spacing: 40px;
+}
+.header_title {
+    font-size: 85px;
+    font-weight: bold;
+    position: absolute;
+    top: 200px;
+    width: 100%;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    pointer-events: none;
+}
+
+.header_arrow {
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 400px;
+    width: 100px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    cursor: pointer;
+    pointer-events: auto;
+    transition: 0.4s;
+}
+
+.header_arrow:hover {
+    color: rgb(64, 187, 80); 
+    width: 150px;
+}
+
+/* MAP */
+
+iframe {
+    width: 90%;
+    display: block;
+    margin: 30px auto;
+    aspect-ratio: 3/1;
+    transition: 1s;
+    border:none;
+    z-index: 1;
+}
+
+.button.close {
+    position: fixed;
+    right: 10px;
+    top:10px;
+    transition: 1s;
+    border: none;
+    background: transparent;
+    z-index: 2;
+}
+.close.icon {
+    width: 50px;
+    padding: 6px;
+    border-radius: 90px;
+    background-color: white;
+}
+
+.button.fullscreen {
+    border-radius: 7px;
+    background-color: rgb(64, 187, 80); 
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    margin-right: 5px;
+}
+.iframe.action_bar {
+    margin: 30px auto;
+    width: 90%;
+}
+
+/* FORM */
+
+form {
+    margin-top: 100px;
+    border: solid rgb(100, 102, 107) 1px;
+    width: 700px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 12px;
+    padding: 15px 25px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.form.send {
+    border-radius: 7px;
+    background-color: rgb(64, 187, 80); 
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    margin-right: 5px;
+}
+.form.input {
+    width: calc(100% - 17px);
+    outline: none;
+    padding: 10px;
+}
+.form.textarea {
+    width: calc(100% - 25px);
+    min-width: calc(100% - 25px);
+    max-width: calc(100% - 25px);
+    height: 120px;
+    padding: 15px;
+    outline: none;
+}
+
+/* ARTICLES */
+
+.title.Article {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 70%;
+    font-size: 42px;
+    margin: 0;
+}
+.Article.Contener {
+    position: relative;
+    display: flex; 
+    justify-content: center;
+}
+.Article.img {
+    width: 90%;
+    margin: 0 auto;
+    background-image: url("./img/saison_pluie.jpg");
+    height: 400px;
+    transition: 0.6s;
+    background-size: 100%;
+    background-position: center;
+    z-index: 0;
+}
+.Article.img.v2 {
+    background-image: url("./img/experiences.jpg");
+}
+.Article.img:hover {
+    background-size: 110%;
+}
+.Article.access.button {
+    border: none;
+    padding: 12px 25px;
+    background-color: rgb(52, 148, 65); 
+    color: white;
+    transition: 0.4s;
+}
+.Article.access.button:hover {
+padding: 12px 120px;
+}
