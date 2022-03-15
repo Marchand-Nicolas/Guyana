@@ -1,9 +1,9 @@
 # Guyana
 
 <br><br>
-  💖 ● test
+  💖 ● This site is a template made quickly for school, if it can inspire someone, do not hesitate to use it
 <br><br>
-📚 ● test
+📚 ● Discord : https://discord.gg/tKypaXn
 
 <h1 align="center">
 Development
