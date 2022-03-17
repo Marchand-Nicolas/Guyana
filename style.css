@@ -15,6 +15,13 @@ body {
     margin: 0
 }
 
+footer {
+    box-shadow: 0px -7px 15px 5px rgba(0,0,0,0.2);
+    padding: 15px;
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(64, 187, 80); 
+}
+
 ::-webkit-scrollbar {
     width: 10px;
 }
